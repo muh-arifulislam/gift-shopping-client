@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <section>
       {/* heading top  */}
-      <div className="lg:px-[80px] px-[10px] py-[10px] lg:py-[15px] bg-slate-200 flex  lg:flex-row flex-col justify-between items-center lg:gap-0 gap-5">
+      <div className="lg:px-[80px] px-[10px] py-[10px] lg:py-[15px] border border-slate-200 bg-slate-100 flex  lg:flex-row flex-col justify-between items-center lg:gap-0 gap-5">
         <div className="flex lg:flex-row flex-col items-center lg:gap-[20px] gap-2">
           <p>
             <FontAwesomeIcon
