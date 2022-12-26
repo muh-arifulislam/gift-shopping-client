@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCoffee,
@@ -7,10 +7,14 @@ import {
   faSearch,
   faCartShopping,
   faHeart,
+  faChevronDown,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import BtnPrimary from "./BtnPrimary";
 import logo from "../../assets/images/logo.jpg";
+import { Link } from "react-router-dom";
 const Header = () => {
+  const [navMenuMobile, setNavMenuMobile] = useState(false);
   return (
     <section>
       {/* heading top  */}
@@ -67,6 +71,152 @@ const Header = () => {
             </span>
           </button>
         </div>
+      </div>
+      <div
+        id="main-menu"
+        className="bg-red-500 text-white lg:px-[80px] px-[10px]"
+      >
+        <nav className="main-menu">
+          <div className="lg:hidden p-[16px] flex justify-between items-center">
+            <p className="text-[19px] font-bold">Menu</p>
+            <span onClick={() => setNavMenuMobile(!navMenuMobile)}>
+              <FontAwesomeIcon size="xl" icon={faBars}></FontAwesomeIcon>
+            </span>
+          </div>
+          <ul className="lg:flex hidden lg:flex-row flex-col justify-center lg:items-center">
+            <li className="">
+              <Link to="/all" className="nav-link">
+                Categories
+                <FontAwesomeIcon
+                  className="ml-[5px]"
+                  icon={faChevronDown}
+                ></FontAwesomeIcon>
+              </Link>
+              <ul>
+                <li>
+                  <Link to="/baby">Baby</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Business & Executive Gifts</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Computer and Mobile Accessories</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Garden Gifts</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Gift Basket & Hampers</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Home & Living</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Love & Romance</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Beauty & Personal Care</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Chocolates & Cookies</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Flowers & Cakes</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Gag & Quireky Gifts</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Gift Cards</Link>
+                </li>
+                <li>
+                  <Link to="/baby">Jewellery</Link>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Anniversary
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Birthday
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Personal
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Reception
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Surprise
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+          <ul
+            className={`${
+              navMenuMobile ? "lg:hidden block" : "lg:hidden hidden"
+            }`}
+          >
+            <li className="">
+              <Link to="/all" className="nav-link">
+                All Gifts
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Anniversary
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Birthday
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Personal
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Reception
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Surprise
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/all" className="nav-link">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </section>
   );
