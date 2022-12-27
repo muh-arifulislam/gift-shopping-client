@@ -1,8 +1,13 @@
 import React from "react";
 
 const BtnSecondary = (props) => {
+  const { onClick } = props;
+
   return (
-    <button className="px-[25px] py-[7px] border border-red-500 rounded-sm text-red-500 hover:text-white hover:bg-red-500 prevent-select">
+    <button
+      onClick={onClick}
+      className="px-[25px] py-[7px] border border-red-500 rounded-sm text-red-500 hover:text-white hover:bg-red-500 prevent-select"
+    >
       {props.children}
     </button>
   );

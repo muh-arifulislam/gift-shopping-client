@@ -16,6 +16,9 @@ import { Link, useNavigate } from "react-router-dom";
 const Header = () => {
   const [navMenuMobile, setNavMenuMobile] = useState(false);
   const navigate = useNavigate();
+  let shoppingCartItem = Object.keys(
+    JSON.parse(localStorage.getItem("shopping-cart"))
+  ).length;
   return (
     <section>
       {/* heading top  */}
@@ -70,7 +73,7 @@ const Header = () => {
           >
             <FontAwesomeIcon size="xl" icon={faCartShopping}></FontAwesomeIcon>
             <span className="px-[10px] py-[3px] rounded-full text-white bg-red-500 absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]">
-              2
+              {shoppingCartItem}
             </span>
           </button>
           <button className="px-[12px] py-[12px] ml-5 rounded-sm relative border borer-slate-100 hover:bg-slate-100 lg:inline hidden">
@@ -94,7 +97,7 @@ const Header = () => {
           </div>
           <ul className="lg:flex hidden lg:flex-row flex-col justify-center lg:items-center">
             <li className="">
-              <Link to="/all" className="nav-link">
+              <Link to="/products" className="nav-link">
                 Categories
                 <FontAwesomeIcon
                   className="ml-[5px]"
@@ -185,7 +188,7 @@ const Header = () => {
             }`}
           >
             <li className="">
-              <Link to="/all" className="nav-link">
+              <Link to="/products" className="nav-link">
                 All Gifts
               </Link>
             </li>

@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import GalleryItem from "../Shared/GalleryItem";
 import Product from "../Shared/Product";
 const FeatureProducts = () => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("products.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
   return (
     <section className="lg:px-[80px] pt-12 bg-slate-100">
       <div>
@@ -12,14 +18,9 @@ const FeatureProducts = () => {
           asperiores.
         </p>
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-4 lg:px-0 px-2 mt-12">
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
+          {products?.map((product) => (
+            <Product product={product} key={product.id}></Product>
+          ))}
         </div>
       </div>
       <div className="py-7 grid lg:grid-cols-3 grid-cols-1 lg:px-0 px-2 gap-5">
