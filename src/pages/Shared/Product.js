@@ -35,7 +35,7 @@ const Product = () => {
           </span>
         </div>
 
-        <div className="flex lg:flex-row flex-col justify-between gap-2">
+        <div className="flex lg:flex-row flex-col lg:gap-1 gap-2 justify-between">
           <BtnPrimary>Buy Now</BtnPrimary>
           <BtnSecondary>Add To Cart</BtnSecondary>
         </div>

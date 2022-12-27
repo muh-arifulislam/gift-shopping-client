@@ -39,3 +39,73 @@
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
   }
+
+  #basket-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+  
+  #basket-table td,
+  #basket-table th {
+    padding: 10px;
+  }
+  
+  #basket-table tr:nth-child(odd) {
+  }
+  
+  
+  #basket-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: black;
+  }
+  
+  
+  
+  .responsive-table-data>span:first-child {
+    display: none;
+  }
+ 
+  .custom-table,
+  th,
+  td {
+    
+    padding: 10px;
+  }
+  
+  .custom-table {
+    width: 100%;
+  }
+  
+  .custom-table > tr > th {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  @media only screen and (max-width:570px) {
+    .responsive-table-data>span:first-child {
+      display: inline;
+    }
+  
+    .responsive-table-row {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .responsive-table-data {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+  
+    .responsive-table-data>span:first-child {
+      font-weight: 700;
+    }
+  
+    .hidden-in-mobile {
+      display: none;
+    }
+  
+  }

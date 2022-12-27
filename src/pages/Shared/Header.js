@@ -12,9 +12,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import BtnPrimary from "./BtnPrimary";
 import logo from "../../assets/images/logo.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Header = () => {
   const [navMenuMobile, setNavMenuMobile] = useState(false);
+  const navigate = useNavigate();
   return (
     <section>
       {/* heading top  */}
@@ -45,7 +46,12 @@ const Header = () => {
       {/* heading search area  */}
       <div className="lg:px-[80px] px-[20px] py-[20px] lg:py-[15px] flex justify-between items-center">
         <div className="">
-          <img className="lg:w-[70%] w-[80%]" src={logo} alt="" />
+          <img
+            onClick={() => navigate("/")}
+            className="lg:w-[70%] w-[80%] cursor-pointer"
+            src={logo}
+            alt=""
+          />
         </div>
         <div className="lg:block hidden">
           <input
@@ -58,7 +64,10 @@ const Header = () => {
           </button>
         </div>
         <div>
-          <button className="px-[12px] py-[12px] rounded-sm relative border borer-slate-100 hover:bg-slate-100">
+          <button
+            onClick={() => navigate("/shopping-cart")}
+            className="px-[12px] py-[12px] rounded-sm relative border borer-slate-100 hover:bg-slate-100"
+          >
             <FontAwesomeIcon size="xl" icon={faCartShopping}></FontAwesomeIcon>
             <span className="px-[10px] py-[3px] rounded-full text-white bg-red-500 absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]">
               2

@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import image from "../../assets/images/p1.jpg";
 import BtnPrimary from "../Shared/BtnPrimary";
 import BtnSecondary from "../Shared/BtnSecondary";
+import Product from "../Shared/Product";
 const ProductDetails = () => {
   return (
     <section className="">
@@ -185,6 +186,15 @@ const ProductDetails = () => {
           </span>
         </p>
       </div>
+      <section className="lg:px-[80px] px-[20px] bg-slate-100">
+        <h4 className="text-3xl text-center py-12">Related Products</h4>
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-3 pb-12">
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+        </div>
+      </section>
     </section>
   );
 };
