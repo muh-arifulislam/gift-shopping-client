@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import ProductDetails from "./pages/Products/ProductDetails";
 import ShoppingCart from "./pages/Cart/ShoppingCart";
 import AllProducts from "./pages/AllProducts/AllProducts";
+import Footer from "./pages/Shared/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           element={<ProductDetails></ProductDetails>}
         ></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

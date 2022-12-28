@@ -19,7 +19,7 @@ const AllProducts = () => {
   }, []);
   return (
     <section>
-      <div className="py-[68px] page-heading text-slate-600 lg:px-[80px] px-[20px] bg-slate-100">
+      <div className="py-[68px] page-heading lg:px-[80px] px-[20px] bg-secondaryBorder">
         <h1 className="text-3xl font-bold mb-3 lg:text-start text-center">
           Shopping Cart
         </h1>
@@ -43,7 +43,7 @@ const AllProducts = () => {
           </div>
         </ul>
       </div>
-      <div className="grid lg:grid-cols-4 grid-cols-1 lg:px-[80px] px-[20px] py-[60px] bg-slate-200">
+      <div className="grid lg:grid-cols-4 grid-cols-1 lg:px-[80px] px-[20px] py-[60px] bg-secondary-light">
         <FilterSection></FilterSection>
         <div className="col-span-3">
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-3">
@@ -52,19 +52,19 @@ const AllProducts = () => {
             ))}
           </div>
           <div className="mt-5 flex justify-end">
-            <button className="px-3 py-1 border-l border-t border-b border-slate-800 rounded-l-md bg-slate-500">
+            <button className="px-3 py-1 border-l border-t border-b border-secondaryBorder rounded-l-md bg-white text-red-dark">
               Previous
             </button>
-            <button className="px-3 py-1 border border-slate-800  bg-slate-500">
+            <button className="px-3 py-1 border border-secondaryBorder bg-white text-red-dark">
               1
             </button>
-            <button className="px-3 py-1 border border-slate-800  bg-slate-500">
+            <button className="px-3 py-1 border border-secondaryBorder bg-red-dark text-white">
               2
             </button>
-            <button className="px-3 py-1 border border-slate-800  bg-slate-500">
+            <button className="px-3 py-1 border border-secondaryBorder bg-white text-red-dark">
               3
             </button>
-            <button className="px-3 py-1 border-r border-t border-b border-slate-800 rounded-r-md bg-slate-500">
+            <button className="px-3 py-1 border-r border-t border-b border-secondaryBorder rounded-r-md bg-white text-red-dark">
               Next
             </button>
           </div>

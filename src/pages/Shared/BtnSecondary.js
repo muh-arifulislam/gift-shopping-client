@@ -6,7 +6,7 @@ const BtnSecondary = (props) => {
   return (
     <button
       onClick={onClick}
-      className="px-[25px] py-[7px] border border-red-500 rounded-sm text-red-500 hover:text-white hover:bg-red-500 prevent-select"
+      className="px-[25px] py-[7px] border border-primaryBorder rounded-sm text-primary hover:text-white hover:bg-primary prevent-select"
     >
       {props.children}
     </button>

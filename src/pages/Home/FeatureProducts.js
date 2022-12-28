@@ -9,7 +9,7 @@ const FeatureProducts = () => {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <section className="lg:px-[80px] pt-12 bg-slate-100">
+    <section className="lg:px-[80px] pt-12 bg-secondary-light">
       <div>
         <h2 className="text-center text-3xl mb-2">Featured Products</h2>
         <p className="text-center mb-2 px-4">

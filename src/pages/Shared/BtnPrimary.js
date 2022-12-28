@@ -5,7 +5,7 @@ const BtnPrimary = (props) => {
   return (
     <button
       onClick={onClick}
-      className="px-[25px] py-[7px] bg-red-500 rounded-sm text-white hover:bg-red-700 prevent-select"
+      className="px-[25px] py-[7px] bg-primary rounded-sm text-white hover:bg-red-dark prevent-select"
     >
       {props.children}
     </button>

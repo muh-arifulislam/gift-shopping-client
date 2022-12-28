@@ -13,6 +13,7 @@ import {
 import BtnPrimary from "./BtnPrimary";
 import logo from "../../assets/images/logo.jpg";
 import { Link, useNavigate } from "react-router-dom";
+import BtnSecondary from "./BtnSecondary";
 const Header = () => {
   const [navMenuMobile, setNavMenuMobile] = useState(false);
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const Header = () => {
   return (
     <section>
       {/* heading top  */}
-      <div className="lg:px-[80px] px-[10px] py-[10px] lg:py-[15px] border border-slate-200 bg-slate-100 flex  lg:flex-row flex-col justify-between items-center lg:gap-0 gap-5">
+      <div className="lg:px-[80px] px-[10px] py-[10px] lg:py-[15px] border border-secondaryBorder bg-secondary flex  lg:flex-row flex-col justify-between items-center lg:gap-0 gap-5">
         <div className="flex lg:flex-row flex-col items-center lg:gap-[20px] gap-2">
           <p>
             <FontAwesomeIcon
@@ -41,9 +42,7 @@ const Header = () => {
         </div>
         <div className="flex gap-5">
           <BtnPrimary>Login</BtnPrimary>
-          <button className="px-[25px] py-[7px] border border-red-500 rounded-sm text-red-500 hover:text-white hover:bg-red-500">
-            Sign Up
-          </button>
+          <BtnSecondary>Sign Up</BtnSecondary>
         </div>
       </div>
       {/* heading search area  */}
@@ -59,26 +58,34 @@ const Header = () => {
         <div className="lg:block hidden">
           <input
             type="text"
-            className="px-[10px] py-[10px] w-[500px] border border-r-0 border-slate-200 rounded-sm"
+            className="px-[10px] py-[10px] w-[500px] border border-r-0 border-secondaryBorder bg-secondary rounded-l-md focus:outline-none focus:bg-white"
             placeholder="Search gift"
           />
-          <button className="px-[15px] py-[10px] border border-l-0 border-slate-200 rounded-sm bg-slate-100">
+          <button className="px-[15px] py-[10px] border border-l-0 border-secondaryBorder rounded-r-md bg-secondary">
             <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
           </button>
         </div>
         <div>
           <button
             onClick={() => navigate("/shopping-cart")}
-            className="px-[12px] py-[12px] rounded-sm relative border borer-slate-100 hover:bg-slate-100"
+            className="px-[12px] py-[12px] rounded-sm relative border border-secondaryBorder hover:bg-secondary shadow-lg"
           >
-            <FontAwesomeIcon size="xl" icon={faCartShopping}></FontAwesomeIcon>
-            <span className="px-[10px] py-[3px] rounded-full text-white bg-red-500 absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]">
+            <FontAwesomeIcon
+              className="opacity-60"
+              size="xl"
+              icon={faCartShopping}
+            ></FontAwesomeIcon>
+            <span className="px-[10px] py-[3px] rounded-full text-white bg-primary absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]">
               {shoppingCartItem}
             </span>
           </button>
-          <button className="px-[12px] py-[12px] ml-5 rounded-sm relative border borer-slate-100 hover:bg-slate-100 lg:inline hidden">
-            <FontAwesomeIcon size="xl" icon={faHeart}></FontAwesomeIcon>
-            <span className="px-[10px] py-[3px] rounded-full text-white bg-amber-500 absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]">
+          <button className="px-[12px] py-[12px] ml-5 rounded-sm relative border border-secondaryBorder hover:bg-secondary shadow-lg lg:inline hidden">
+            <FontAwesomeIcon
+              className="opacity-60"
+              size="xl"
+              icon={faHeart}
+            ></FontAwesomeIcon>
+            <span className="px-[10px] py-[3px] rounded-full text-white bg-tertiary absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]">
               2
             </span>
           </button>
@@ -86,7 +93,7 @@ const Header = () => {
       </div>
       <div
         id="main-menu"
-        className="bg-red-500 text-white lg:px-[80px] px-[10px]"
+        className="bg-primary text-white lg:px-[80px] px-[10px]"
       >
         <nav className="main-menu">
           <div className="lg:hidden p-[16px] flex justify-between items-center">
