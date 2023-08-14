@@ -19,7 +19,7 @@ function App() {
           element={<ShoppingCart></ShoppingCart>}
         ></Route>
         <Route
-          path="/product/details"
+          path="/products/:id"
           element={<ProductDetails></ProductDetails>}
         ></Route>
       </Routes>

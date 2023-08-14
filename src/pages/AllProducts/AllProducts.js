@@ -13,12 +13,13 @@ import FilterSection from "./FilterSection";
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("products.json")
+    fetch("http://localhost:5000/client/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
   return (
     <section>
+      {/* section header  */}
       <div className="py-[68px] page-heading lg:px-[80px] px-[20px] bg-secondaryBorder">
         <h1 className="text-3xl font-bold mb-3 lg:text-start text-center">
           Shopping Cart

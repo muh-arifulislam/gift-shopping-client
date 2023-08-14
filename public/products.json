@@ -1,50 +1,390 @@
-[
-    {   
-        "id":"gift101",
-        "name":"Personalised Birthday Easel",
-        "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit libero pellentesque libero interdum, id mattis felis dictum. Praesent eget lacus tempor justo efficitur malesuada. Cras ut suscipit nisi eget lacus tempor justo efficitur.",
-        "category":"flowers",
-        "price":60.00,
-        "discountPrice":44.00,
-        "ratings":4.1,
-        "quantity":50,
-        "sold":0,
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu velit nec neque tempus commodo. Mauris dictum nunc vitae elit porta blandit. Proin non laoreet odio. Sed aliquet, turpis sodales mattis fringilla, massa nulla iaculis justo, sit amet imperdiet libero orci eget neque. Morbi tincidunt vehicula vulputate. Vestibulum efficitur accumsan scelerisque. Nulla rutrum neque id nunc aliquam suscipit. Fusce eget arcu aliquet, gravida massa non, fringilla sem. Cras sapien dui, varius vitae nisi eget, tristique mattis justo. Fusce auctor consequat leo, ac mattis sem fermentum condimentum. Suspendisse ultrices elementum diam eget lobortis. Morbi et libero odio. Sed rutrum augue eget ante laoreet finibus. Suspendisse pellentesque feugiat nunc, a finibus eros mollis at. Proin lorem nisi, commodo vitae nibh sit amet, tempor posuere neque. Vivamus lobortis est nec libero maximus, feugiat iaculis sem laoreet. Suspendisse porta egestas justo, feugiat gravida turpis. Quisque ut tristique nibh, vel auctor erat. Proin eget finibus diam. Sed in tortor vitae risus elementum iaculis. Quisque vitae est elit. Phasellus sed quam felis. Sed eget nisi varius, finibus eros vitae, porta quam. Aliquam pulvinar placerat placerat. Nulla at mattis sem. Nam eget auctor massa, et tristique lacus. Sed lacus dolor, commodo ac blandit sit amet, lacinia id quam. Vivamus hendrerit risus id lectus convallis, quis feugiat ligula auctor. Curabitur ante nulla, vestibulum a eros vitae, ultricies molestie purus. Maecenas sed elit nec sapien tristique tincidunt. Aliquam laoreet nulla ac metus mattis viverra. Fusce hendrerit, augue eget hendrerit pellentesque, lorem nulla condimentum massa, efficitur pellentesque tortor sapien sed lectus. Nullam et lorem ut turpis finibus facilisis in vel orci. Nunc vitae urna sit amet libero scelerisque efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus imperdiet, scelerisque nunc id, pharetra metus."
+{
+  "accessories": [
+    {
+      "id": "BGL1001",
+      "name": "Elegant Gold Bangle",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "A beautiful and elegant gold bangle, perfect for formal occasions.",
+      "price": 299.99,
+      "priceCutOffer": {
+        "isOfferAvailable": false,
+        "discountedPrice": 299.99,
+        "discountPercentage": 0
+      },
+      "images": {
+        "sm": "https://ibb.co/Fm5xLNZ",
+        "md": "https://ibb.co/fMfpGsJ",
+        "lg": "https://ibb.co/C2NtwBb"
+      },
+      "currency": "USD",
+      "category": "Jewelry",
+      "manufacturer": "Luxury Jewelers",
+      "stock": 50,
+      "tags": ["bangle", "gold", "elegant", "formal"],
+      "rating": {
+        "rate": 4.8,
+        "count": 25
+      }
     },
-    {   
-        "id":"gift102",
-        "name":"Personalised Birthday Dasel",
-        "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit libero pellentesque libero interdum, id mattis felis dictum. Praesent eget lacus tempor justo efficitur malesuada. Cras ut suscipit nisi eget lacus tempor justo efficitur.",
-        "category":"flowers",
-        "price":60.00,
-        "discountPrice":40.00,
-        "ratings":4.1,
-        "quantity":50,
-        "sold":0,
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu velit nec neque tempus commodo. Mauris dictum nunc vitae elit porta blandit. Proin non laoreet odio. Sed aliquet, turpis sodales mattis fringilla, massa nulla iaculis justo, sit amet imperdiet libero orci eget neque. Morbi tincidunt vehicula vulputate. Vestibulum efficitur accumsan scelerisque. Nulla rutrum neque id nunc aliquam suscipit. Fusce eget arcu aliquet, gravida massa non, fringilla sem. Cras sapien dui, varius vitae nisi eget, tristique mattis justo. Fusce auctor consequat leo, ac mattis sem fermentum condimentum. Suspendisse ultrices elementum diam eget lobortis. Morbi et libero odio. Sed rutrum augue eget ante laoreet finibus. Suspendisse pellentesque feugiat nunc, a finibus eros mollis at. Proin lorem nisi, commodo vitae nibh sit amet, tempor posuere neque. Vivamus lobortis est nec libero maximus, feugiat iaculis sem laoreet. Suspendisse porta egestas justo, feugiat gravida turpis. Quisque ut tristique nibh, vel auctor erat. Proin eget finibus diam. Sed in tortor vitae risus elementum iaculis. Quisque vitae est elit. Phasellus sed quam felis. Sed eget nisi varius, finibus eros vitae, porta quam. Aliquam pulvinar placerat placerat. Nulla at mattis sem. Nam eget auctor massa, et tristique lacus. Sed lacus dolor, commodo ac blandit sit amet, lacinia id quam. Vivamus hendrerit risus id lectus convallis, quis feugiat ligula auctor. Curabitur ante nulla, vestibulum a eros vitae, ultricies molestie purus. Maecenas sed elit nec sapien tristique tincidunt. Aliquam laoreet nulla ac metus mattis viverra. Fusce hendrerit, augue eget hendrerit pellentesque, lorem nulla condimentum massa, efficitur pellentesque tortor sapien sed lectus. Nullam et lorem ut turpis finibus facilisis in vel orci. Nunc vitae urna sit amet libero scelerisque efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus imperdiet, scelerisque nunc id, pharetra metus."
+    {
+      "id": "BRL1002",
+      "name": "Elegant Swirl Bracelet",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Add a touch of elegance to your style with this stunning swirl bracelet. The intricate design and high-quality materials make it a perfect accessory for any occasion.",
+      "price": 29.99,
+      "priceCutOffer": {
+        "isOfferAvailable": true,
+        "discountedPrice": 24.99,
+        "discountPercentage": 17
+      },
+      "images": {
+        "sm": "https://ibb.co/542rZ7n",
+        "md": "https://ibb.co/rHJNfRw",
+        "lg": "https://ibb.co/5kpJh60"
+      },
+      "currency": "USD",
+      "category": "Jewelry",
+      "manufacturer": "LuxuryCrafts",
+      "stock": 100,
+      "tags": ["bracelet", "swirl", "elegant", "jewelry", "fashion"],
+      "rating": {
+        "rate": 4.8,
+        "count": 32
+      }
     },
-    {   
-        "id":"gift103",
-        "name":"Personalised Birthday Basel",
-        "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit libero pellentesque libero interdum, id mattis felis dictum. Praesent eget lacus tempor justo efficitur malesuada. Cras ut suscipit nisi eget lacus tempor justo efficitur.",
-        "category":"flowers",
-        "price":60.00,
-        "discountPrice":30.00,
-        "ratings":4.1,
-        "quantity":50,
-        "sold":0,
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu velit nec neque tempus commodo. Mauris dictum nunc vitae elit porta blandit. Proin non laoreet odio. Sed aliquet, turpis sodales mattis fringilla, massa nulla iaculis justo, sit amet imperdiet libero orci eget neque. Morbi tincidunt vehicula vulputate. Vestibulum efficitur accumsan scelerisque. Nulla rutrum neque id nunc aliquam suscipit. Fusce eget arcu aliquet, gravida massa non, fringilla sem. Cras sapien dui, varius vitae nisi eget, tristique mattis justo. Fusce auctor consequat leo, ac mattis sem fermentum condimentum. Suspendisse ultrices elementum diam eget lobortis. Morbi et libero odio. Sed rutrum augue eget ante laoreet finibus. Suspendisse pellentesque feugiat nunc, a finibus eros mollis at. Proin lorem nisi, commodo vitae nibh sit amet, tempor posuere neque. Vivamus lobortis est nec libero maximus, feugiat iaculis sem laoreet. Suspendisse porta egestas justo, feugiat gravida turpis. Quisque ut tristique nibh, vel auctor erat. Proin eget finibus diam. Sed in tortor vitae risus elementum iaculis. Quisque vitae est elit. Phasellus sed quam felis. Sed eget nisi varius, finibus eros vitae, porta quam. Aliquam pulvinar placerat placerat. Nulla at mattis sem. Nam eget auctor massa, et tristique lacus. Sed lacus dolor, commodo ac blandit sit amet, lacinia id quam. Vivamus hendrerit risus id lectus convallis, quis feugiat ligula auctor. Curabitur ante nulla, vestibulum a eros vitae, ultricies molestie purus. Maecenas sed elit nec sapien tristique tincidunt. Aliquam laoreet nulla ac metus mattis viverra. Fusce hendrerit, augue eget hendrerit pellentesque, lorem nulla condimentum massa, efficitur pellentesque tortor sapien sed lectus. Nullam et lorem ut turpis finibus facilisis in vel orci. Nunc vitae urna sit amet libero scelerisque efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus imperdiet, scelerisque nunc id, pharetra metus."
+    {
+      "id": "CAP1001",
+      "name": "Classic Baseball Cap",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Stay stylish and protected from the sun with this classic baseball cap. Made from high-quality materials, it offers both comfort and durability, making it a versatile accessory for outdoor activities.",
+      "price": 19.99,
+      "priceCutOffer": {
+        "isOfferAvailable": false,
+        "discountedPrice": 0,
+        "discountPercentage": 0
+      },
+      "images": {
+        "sm": "https://ibb.co/YPNJDJ9",
+        "md": "https://ibb.co/VMvcw66",
+        "lg": "https://ibb.co/ssnVxpL"
+      },
+      "currency": "USD",
+      "category": "Accessories",
+      "manufacturer": "StyleWear",
+      "stock": 250,
+      "tags": ["cap", "baseball cap", "outdoor", "fashion", "accessory"],
+      "rating": {
+        "rate": 4.5,
+        "count": 55
+      }
     },
-    {   
-        "id":"gift104",
-        "name":"Personalised Birthday Casel",
-        "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit libero pellentesque libero interdum, id mattis felis dictum. Praesent eget lacus tempor justo efficitur malesuada. Cras ut suscipit nisi eget lacus tempor justo efficitur.",
-        "category":"flowers",
-        "price":60.00,
-        "discountPrice":20.00,
-        "ratings":4.1,
-        "quantity":50,
-        "sold":0,
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu velit nec neque tempus commodo. Mauris dictum nunc vitae elit porta blandit. Proin non laoreet odio. Sed aliquet, turpis sodales mattis fringilla, massa nulla iaculis justo, sit amet imperdiet libero orci eget neque. Morbi tincidunt vehicula vulputate. Vestibulum efficitur accumsan scelerisque. Nulla rutrum neque id nunc aliquam suscipit. Fusce eget arcu aliquet, gravida massa non, fringilla sem. Cras sapien dui, varius vitae nisi eget, tristique mattis justo. Fusce auctor consequat leo, ac mattis sem fermentum condimentum. Suspendisse ultrices elementum diam eget lobortis. Morbi et libero odio. Sed rutrum augue eget ante laoreet finibus. Suspendisse pellentesque feugiat nunc, a finibus eros mollis at. Proin lorem nisi, commodo vitae nibh sit amet, tempor posuere neque. Vivamus lobortis est nec libero maximus, feugiat iaculis sem laoreet. Suspendisse porta egestas justo, feugiat gravida turpis. Quisque ut tristique nibh, vel auctor erat. Proin eget finibus diam. Sed in tortor vitae risus elementum iaculis. Quisque vitae est elit. Phasellus sed quam felis. Sed eget nisi varius, finibus eros vitae, porta quam. Aliquam pulvinar placerat placerat. Nulla at mattis sem. Nam eget auctor massa, et tristique lacus. Sed lacus dolor, commodo ac blandit sit amet, lacinia id quam. Vivamus hendrerit risus id lectus convallis, quis feugiat ligula auctor. Curabitur ante nulla, vestibulum a eros vitae, ultricies molestie purus. Maecenas sed elit nec sapien tristique tincidunt. Aliquam laoreet nulla ac metus mattis viverra. Fusce hendrerit, augue eget hendrerit pellentesque, lorem nulla condimentum massa, efficitur pellentesque tortor sapien sed lectus. Nullam et lorem ut turpis finibus facilisis in vel orci. Nunc vitae urna sit amet libero scelerisque efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus imperdiet, scelerisque nunc id, pharetra metus."
+    {
+      "id": "COL1003",
+      "name": "Daily Wear Contact Lenses",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Experience clear vision and all-day comfort with these high-quality daily wear contact lenses. Designed to provide excellent moisture and breathability, these lenses are perfect for everyday use.",
+      "price": 34.99,
+      "priceCutOffer": {
+        "isOfferAvailable": true,
+        "discountedPrice": 29.99,
+        "discountPercentage": 14
+      },
+      "images": {
+        "sm": "https://ibb.co/1mNyN6S",
+        "md": "https://ibb.co/DfwTCqn",
+        "lg": "https://ibb.co/CW08MQh"
+      },
+      "currency": "USD",
+      "category": "Eyewear",
+      "manufacturer": "ClearEyes",
+      "stock": 1000,
+      "tags": ["contact lenses", "daily wear", "vision", "eyewear", "health"],
+      "rating": {
+        "rate": 4.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "EAR1004",
+      "name": "Crystal Drop Earrings",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Enhance your elegance with these exquisite crystal drop earrings. Their dazzling design and shimmering crystals make them a perfect accessory for special occasions and parties.",
+      "price": 49.99,
+      "priceCutOffer": {
+        "isOfferAvailable": false,
+        "discountedPrice": 0,
+        "discountPercentage": 0
+      },
+      "images": {
+        "sm": "https://ibb.co/LkDPhX1",
+        "md": "https://ibb.co/yfM93P2",
+        "lg": "https://ibb.co/RHrdBVY"
+      },
+      "currency": "USD",
+      "category": "Jewelry",
+      "manufacturer": "GlamourGems",
+      "stock": 200,
+      "tags": [
+        "earrings",
+        "crystal earrings",
+        "drop earrings",
+        "jewelry",
+        "fashion"
+      ],
+      "rating": {
+        "rate": 4.7,
+        "count": 80
+      }
+    },
+    {
+      "id": "EYG1005",
+      "name": "Classic Square Eyeglasses",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Achieve a timeless and sophisticated look with these classic square eyeglasses. The sleek design and durable frame make them a perfect choice for everyday wear.",
+      "price": 79.99,
+      "priceCutOffer": {
+        "isOfferAvailable": true,
+        "discountedPrice": 59.99,
+        "discountPercentage": 25
+      },
+      "images": {
+        "sm": "https://ibb.co/rFGnfFy",
+        "md": "https://ibb.co/GvQ1Stf",
+        "lg": "https://ibb.co/q0wP4qC"
+      },
+      "currency": "USD",
+      "category": "Eyewear",
+      "manufacturer": "FashionOptics",
+      "stock": 300,
+      "tags": [
+        "eyeglasses",
+        "square eyeglasses",
+        "fashion",
+        "accessories",
+        "vision"
+      ],
+      "rating": {
+        "rate": 4.6,
+        "count": 65
+      }
+    },
+    {
+      "id": "HDB1006",
+      "name": "Sporty Elastic Headband",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Stay focused and stylish during workouts with this sporty elastic headband. Designed to keep your hair in place and wick away sweat, it's a must-have accessory for active individuals.",
+      "price": 12.99,
+      "priceCutOffer": {
+        "isOfferAvailable": false,
+        "discountedPrice": 0,
+        "discountPercentage": 0
+      },
+      "images": {
+        "sm": "https://ibb.co/4Y00H7W",
+        "md": "https://ibb.co/6Bmht5R",
+        "lg": "https://ibb.co/wSRBTcM"
+      },
+      "currency": "USD",
+      "category": "Accessories",
+      "manufacturer": "FitGear",
+      "stock": 150,
+      "tags": [
+        "headband",
+        "sporty headband",
+        "hair accessory",
+        "athletic gear",
+        "fitness"
+      ],
+      "rating": {
+        "rate": 4.8,
+        "count": 40
+      }
+    },
+    {
+      "id": "NCL1007",
+      "name": "Charming Pendant Necklace",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Make a statement with this charming pendant necklace. The elegant design and high-quality materials make it a perfect accessory for both casual and formal occasions.",
+      "price": 39.99,
+      "priceCutOffer": {
+        "isOfferAvailable": true,
+        "discountedPrice": 29.99,
+        "discountPercentage": 25
+      },
+      "images": {
+        "sm": "https://ibb.co/7v6rLNY",
+        "md": "https://ibb.co/gwXpG4Z",
+        "lg": "https://ibb.co/kX719gT"
+      },
+      "currency": "USD",
+      "category": "Jewelry",
+      "manufacturer": "EleganceJewels",
+      "stock": 120,
+      "tags": [
+        "necklace",
+        "pendant necklace",
+        "fashion",
+        "jewelry",
+        "accessory"
+      ],
+      "rating": {
+        "rate": 4.7,
+        "count": 85
+      }
+    },
+    {
+      "id": "RNG1008",
+      "name": "Eternal Love Diamond Ring",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Express your eternal love with this exquisite diamond ring. The stunning design and sparkling diamonds make it a symbol of everlasting affection and commitment.",
+      "price": 299.99,
+      "priceCutOffer": {
+        "isOfferAvailable": true,
+        "discountedPrice": 249.99,
+        "discountPercentage": 17
+      },
+      "images": {
+        "sm": "https://ibb.co/jwyyzny",
+        "md": "https://ibb.co/2MhCqHK",
+        "lg": "https://ibb.co/Y25c00y"
+      },
+      "currency": "USD",
+      "category": "Jewelry",
+      "manufacturer": "LoveGems",
+      "stock": 80,
+      "tags": ["ring", "diamond ring", "engagement ring", "jewelry", "love"],
+      "rating": {
+        "rate": 4.9,
+        "count": 50
+      }
+    },
+    {
+      "id": "SGL009",
+      "name": "Classic Aviator Sunglasses",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Stay stylish and protect your eyes from the sun with these classic aviator sunglasses. The timeless design and UV-blocking lenses make them a must-have accessory for sunny days.",
+      "price": 49.99,
+      "priceCutOffer": {
+        "isOfferAvailable": false,
+        "discountedPrice": 0,
+        "discountPercentage": 0
+      },
+      "images": {
+        "sm": "https://ibb.co/v1xGrNL",
+        "md": "https://ibb.co/TWbFk4K",
+        "lg": "https://ibb.co/ZRrr1qf"
+      },
+      "currency": "USD",
+      "category": "Eyewear",
+      "manufacturer": "SunShades",
+      "stock": 200,
+      "tags": [
+        "sunglasses",
+        "aviator sunglasses",
+        "fashion",
+        "accessories",
+        "UV protection"
+      ],
+      "rating": {
+        "rate": 4.8,
+        "count": 70
+      }
+    },
+    {
+      "id": "WT010",
+      "name": "Classic Chronograph Watch",
+      "category_id":"64cb43c7e7e90c29e0e00453",
+      "description": "Elevate your style with this classic chronograph watch. The sophisticated design and precise timekeeping make it a perfect blend of fashion and functionality.",
+      "price": 159.99,
+      "priceCutOffer": {
+        "isOfferAvailable": true,
+        "discountedPrice": 139.99,
+        "discountPercentage": 13
+      },
+      "images": {
+        "sm": "https://ibb.co/3dynJn1",
+        "md": "https://ibb.co/L8RWXJM",
+        "lg": "https://ibb.co/pK1SqLK"
+      },
+      "currency": "USD",
+      "category": "Watches",
+      "manufacturer": "TimeMaster",
+      "stock": 100,
+      "tags": [
+        "watch",
+        "chronograph watch",
+        "timepiece",
+        "fashion",
+        "accessories"
+      ],
+      "rating": {
+        "rate": 4.6,
+        "count": 90
+      }
     }
-]
+  ],
+  "appliances": [
+    {
+      "id": "AIC1011",
+      "name": "Energy-Saving Split Air Conditioner",
+      "category_id":"64cb43c7e7e90c29e0e00454",
+      "description": "Keep your living space cool and comfortable with this energy-saving split air conditioner. It features advanced cooling technology and a user-friendly remote control for easy operation.",
+      "price": 699.99,
+      "priceCutOffer": {
+        "isOfferAvailable": true,
+        "discountedPrice": 599.99,
+        "discountPercentage": 14
+      },
+      "images": {
+        "sm": "https://ibb.co/BjMxfNH",
+        "md": "https://ibb.co/S661mzh",
+        "lg": "https://ibb.co/C0qb6sb"
+      },
+      "currency": "USD",
+      "category": "Appliances",
+      "manufacturer": "CoolTech",
+      "stock": 50,
+      "tags": [
+        "air conditioner",
+        "split AC",
+        "cooling appliance",
+        "energy-saving"
+      ],
+      "rating": {
+        "rate": 4.5,
+        "count": 25
+      }
+    },
+    {
+      "id": "CFM1012",
+      "name": "Premium Coffee Machine",
+      "category_id":"64cb43c7e7e90c29e0e00454",
+      "description": "Enjoy the perfect cup of coffee at home with this premium coffee machine. It offers a variety of brewing options and a built-in grinder for freshly ground coffee beans.",
+      "price": 179.99,
+      "priceCutOffer": {
+        "isOfferAvailable": true,
+        "discountedPrice": 159.99,
+        "discountPercentage": 11
+      },
+      "images": {
+        "sm": "https://ibb.co/nBfG76h",
+        "md": "https://ibb.co/JCYJ4Yq",
+        "lg": "https://ibb.co/FXhftHp"
+      },
+      "currency": "USD",
+      "category": "Appliances",
+      "manufacturer": "BrewMaster",
+      "stock": 30,
+      "tags": [
+        "coffee machine",
+        "espresso maker",
+        "coffee maker",
+        "kitchen appliance"
+      ],
+      "rating": {
+        "rate": 4.7,
+        "count": 60
+      }
+    }
+  ]
+}

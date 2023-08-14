@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   faChevronRight,
   faHouseChimney,
@@ -7,12 +7,20 @@ import {
   faHeart,
   faCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import image from "../../assets/images/p1.jpg";
 import BtnPrimary from "../Shared/BtnPrimary";
 import BtnSecondary from "../Shared/BtnSecondary";
 import Product from "../Shared/Product";
 const ProductDetails = () => {
+  const [product, setProduct] = useState({});
+  const { id } = useParams();
+  let discountedPrice = product?.price;
+  useEffect(() => {
+    fetch(`http://localhost:5000/client/product?id=${id}`)
+      .then((res) => res.json())
+      .then((data) => setProduct(data));
+  }, []);
   return (
     <section className="">
       <div className="py-[68px] page-heading text-slate-600 lg:px-[80px] px-[20px] bg-slate-100">
@@ -51,17 +59,18 @@ const ProductDetails = () => {
       </div>
       <div className="lg:px-[80px] px-[20px] bg-white">
         <div className="grid lg:grid-cols-3 grid-cols-1 lg:p-[80px]">
-          <img className="mx-auto" src={image} alt="" />
+          <img className="mx-auto" src={product?.images?.md} alt="" />
           <div className="col-span-2 lg:px-5 px-0">
-            <h2 className="text-3xl mb-2">Personalised Birthday Easel</h2>
-            <p className="mb-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              hendrerit libero pellentesque libero interdum, id mattis felis
-              dictum. Praesent eget lacus tempor justo efficitur malesuada. Cras
-              ut suscipit nisi eget lacus tempor justo efficitur.
-            </p>
+            <h2 className="text-3xl mb-2">{product?.name}</h2>
+            <p className="mb-2">{product?.description}</p>
             <h4 className="mb-2 text-2xl text-red-500">
-              $44.00 <span className="text-slate-500 line-through">60.00</span>
+              $
+              {product?.priceCutOffer?.isOfferAvailable
+                ? product?.priceCutOffer?.discountedPrice
+                : product?.price}{" "}
+              <span className="text-slate-500 line-through">
+                {product?.priceCutOffer?.isOfferAvailable ? product?.price : ""}
+              </span>
             </h4>
             <div className="flex justify-between items-center mb-2">
               <span>
@@ -188,12 +197,12 @@ const ProductDetails = () => {
       </div>
       <section className="lg:px-[80px] px-[20px] bg-slate-100">
         <h4 className="text-3xl text-center py-12">Related Products</h4>
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-3 pb-12">
+        {/* <div className="grid lg:grid-cols-4 grid-cols-1 gap-3 pb-12">
           <Product></Product>
           <Product></Product>
           <Product></Product>
           <Product></Product>
-        </div>
+        </div> */}
       </section>
     </section>
   );

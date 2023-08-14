@@ -4,24 +4,32 @@ import { faHeart, faStar } from "@fortawesome/free-solid-svg-icons";
 import image from "../../assets/images/p1.jpg";
 import BtnPrimary from "../Shared/BtnPrimary";
 import BtnSecondary from "../Shared/BtnSecondary";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { addToDb } from "../../fakeDB";
 const Product = ({ product }) => {
   const [save, setSave] = useState(false);
   const navigate = useNavigate();
+  let discountedPrice = product?.price;
+  if (product.priceCutOffer.isOfferAvailable) {
+    discountedPrice = product.priceCutOffer.discountedPrice;
+  }
   return (
     <div className="bg-white p-2 rounded-sm shadow-lg">
-      <img className="cursor-pointer" src={image} alt="" />
+      <Link to={`/products/${product._id}`}>
+        <img className="" src={product?.images?.md} alt="" />
+      </Link>
       <div className="p-2">
-        <h2 className="mb-2 text-xl text-slate-500 font-bold">
-          {product?.name}
-        </h2>
-        <h4 className="mb-2 text-xl text-red-700 font-bold">
-          ${product?.discountPrice}.00{" "}
-          <span className="text-slate-700 line-through">
-            {product?.price}.00
-          </span>
-        </h4>
+        <Link to={`/products/${product._id}`}>
+          <h2 className="mb-2 text-xl text-slate-500 font-bold">
+            {product?.name}
+          </h2>
+        </Link>
+        <div>
+          <h4 className="mb-2 text-xl text-red-700 font-bold">
+            <span className="mr-4">${discountedPrice}</span>
+            <span className="text-red-400 line-through">{product?.price}</span>
+          </h4>
+        </div>
         <div className="mb-2 flex justify-between items-center">
           <span>
             <FontAwesomeIcon color="gold" icon={faStar}></FontAwesomeIcon>
